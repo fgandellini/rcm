@@ -9,6 +9,7 @@ TESTS = \
 	lsrc-usage.t \
 	lsrc-undotted.t \
 	lsrc-host-tags-default.t \
+	lsrc-handle-spaces.t \
 	mkrc-alternate-dotfiles-dir.t \
 	mkrc-copy-file.t \
 	mkrc-host-file.t \
@@ -18,6 +19,7 @@ TESTS = \
 	mkrc-tagged-file.t \
 	mkrc-usage.t \
 	mkrc-undotted.t \
+	mkrc-handle-spaces.t \
 	rcrc-custom.t \
 	rcrc-hostname.t \
 	rcrc.t \
@@ -30,7 +32,11 @@ TESTS = \
 	rcup-hooks.t
 
 
+# TESTS = \
+# 	lsrc-handle-spaces.t
+
 dist_check_SCRIPTS = $(TESTS)
 dist_check_DATA = helper.sh
 
 LOG_COMPILER = cram
+# LOG_FLAGS = --keep-tmpdir
